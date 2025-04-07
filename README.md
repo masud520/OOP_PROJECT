@@ -15,7 +15,7 @@ This Java program is designed to process examination results for a university de
   - Current date
 
 ## Group Members
-1. [Member 1 192255-ABDI MASUD] - [ROLES;1.Student class and core data structure
+1. [Member 1 **192255-ABDI MASUD**] - [**ROLES**;1.Student class and core data structure
    2.Input/Output methods and validation
    3.Grading calculations and report generation]
 
@@ -57,6 +57,8 @@ The program implements the following grading scale based on Strathmore Universit
 - [ ] Add support for different grading systems
 - [ ] Include statistical analysis of class performance
 
+**##AUTHOR**
+**MASUD ABDI , https://github.com/masud520/OOP_PROJECT**
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
