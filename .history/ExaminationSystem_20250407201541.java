@@ -38,20 +38,4 @@ public class ExaminationSystem {
         }
     }
     
-    // Method to read subject scores
-    private static void readSubjectScores(List<Student> students) {
-        Scanner scanner = new Scanner(System.in);
-        String[] subjects = {"Math", "English", "Science", "History", "Programming"};
-        
-        for (Student student : students) {
-            System.out.println("\nEnter scores for " + student.getName() + ":");
-            for (String subject : subjects) {
-                System.out.print(subject + " score: ");
-                double score = scanner.nextDouble();
-                student.addSubjectScore(subject, score);
-            }
-            scanner.nextLine(); // consume newline
-        }
-    }
-    
-   
+    /
