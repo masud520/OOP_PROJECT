@@ -115,7 +115,7 @@ class Student {
     
     public void determineGrade() {
         // Strathmore University grading system (adjust as needed)
-        if (averageScore >= 75) this.grade = "A";
+        if (averageScore >= 70) this.grade = "A";
         else if (averageScore >= 60) this.grade = "B";
         else if (averageScore >= 50) this.grade = "C";
         else if (averageScore >= 40) this.grade = "D";
