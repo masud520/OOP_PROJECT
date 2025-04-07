@@ -87,3 +87,54 @@ public class ExaminationSystem {
     }
 }
 
+class Student {
+    private String name;
+    private String id;
+    private Map<String, Double> subjectScores;
+    private double averageScore;
+    private String grade;
+    private String recommendation;
+    
+    public Student(String name, String id) {
+        this.name = name;
+        this.id = id;
+        this.subjectScores = new HashMap<>();
+    }
+    
+    public void addSubjectScore(String subject, double score) {
+        subjectScores.put(subject, score);
+    }
+    
+    public void calculateAverage() {
+        double sum = 0;
+        for (double score : subjectScores.values()) {
+            sum += score;
+        }
+        this.averageScore = sum / subjectScores.size();
+    }
+    
+    public void determineGrade() {
+        // Strathmore University grading system (adjust as needed)
+        if (averageScore >= 70) this.grade = "A";
+        else if (averageScore >= 60) this.grade = "B";
+        else if (averageScore >= 50) this.grade = "C";
+        else if (averageScore >= 40) this.grade = "D";
+        else this.grade = "F";
+    }
+    
+    public void generateRecommendation() {
+        if (averageScore >= 70) this.recommendation = "Excellent performance";
+        else if (averageScore >= 60) this.recommendation = "Good performance";
+        else if (averageScore >= 50) this.recommendation = "Average performance";
+        else if (averageScore >= 40) this.recommendation = "Below average - needs improvement";
+        else this.recommendation = "Poor performance - consider remedial classes";
+    }
+    
+    // Getters
+    public String getName() { return name; }
+    public String getId() { return id; }
+    public Map<String, Double> getSubjectScores() { return subjectScores; }
+    public double getAverageScore() { return averageScore; }
+    public String getGrade() { return grade; }
+    public String getRecommendation() { return recommendation; }
+}
